@@ -39,7 +39,7 @@ body {
 .container {
     width: 400px;
     height: 600px;
-    padding: 30px;
+    padding: 50px; /* 根据需要调整容器的内边距 */
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -63,26 +63,26 @@ body {
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.5s ease;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 hr {
     width: 80%;
     border: none;
     border-top: 1px dotted #aaa;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 
 
 .name {
-    font-size: 2em;
+    font-size: 3em;
     color: #555;
     margin-bottom: 20px;
 }
 
 .message {
-    font-size: 1.15em;
+    font-size: 1.2em;
     color: #555;
     text-align: left;
     max-width: 100%;
