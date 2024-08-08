@@ -1,0 +1,161 @@
+body {
+    font-family: "Zhi Mang Xing", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes inkSpread {
+    0% {
+        clip-path: circle(0% at 50% 50%);
+        -webkit-clip-path: circle(0% at 50% 50%);
+    }
+
+    100% {
+        clip-path: circle(150% at 50% 50%);
+        -webkit-clip-path: circle(150% at 50% 50%);
+    }
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    width: 400px;
+    height: 600px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transform-style: preserve-3d;
+    position: relative;
+    clip-path: circle(0% at 50% 50%);
+    -webkit-clip-path: circle(0% at 50% 50%);
+    animation: inkSpread 5s forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 确保子元素水平居中 */
+    justify-content: space-between; /* 确保子元素均匀分布 */
+}
+
+
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 80%;
+    border: none;
+    border-top: 1px dotted #aaa;
+    margin: 20px 0;
+}
+
+
+
+.name {
+    font-size: 2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 1.15em;
+    color: #555;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 0; /* 添加一些内边距以确保文字不紧贴边缘 */
+}
+
+
+.avatar.rotate {
+    transform: rotate(360deg);
+}
+
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section p {
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #0073e6;
+}
+
+.social-icons svg,
+.social-icons i {
+    width: 100%;
+    height: 100%;
+    font-size: 48px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: transparent;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    color: white;
+    font-size: 1.1em;
+    font-family: Arial, sans-serif;
+    /* 指定英文字体 */
+}
+
+
+.zhi-mang-xing-regular {
+    font-family: "Zhi Mang Xing", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
